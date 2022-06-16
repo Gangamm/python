@@ -1,0 +1,35 @@
+print("hello world")#printing string
+
+#output will be: hello world
+
+
+#printing even number using data type :list
+
+n=list(range(2,10,2))
+print("even numbers are",n)
+
+#output will be
+#even numbers are [2, 4, 6, 8]
+
+#printing odd number
+n=list(range(1,10,2))
+print("odd numbers are",n)
+
+#output will be
+#odd numbers are [1, 3, 5, 7, 9]
+
+a=5
+print(type(a))
+
+b=3.3
+print(type(b))
+
+c=5+3.3j
+print(type(c))
+
+OUTPUT
+
+
+<class 'int'>
+<class 'float'>
+<class 'complex'>
