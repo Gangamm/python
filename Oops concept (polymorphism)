@@ -1,0 +1,36 @@
+# python
+#Ploymorphism implementing the same thing with different ways 
+#Poymorphism can be achived by in two ways ->overloading ,overriding
+#Operating Overloading,method overloadingn`
+#Operating Overloading-> +  plus is a additional operater as well as string concatination this called OP
+#Method Overloading->method name is name but different in there agr
+
+OPERATER OVERLOADING PROGRAM
+a="hello"
+b="welcome"
+print(a+b)
+a=10
+b=20
+print(a+b)
+
+#OUTPUT 
+---------------------------------------------------------
+hellowelcome
+30
+
+METHOD OVERLOADING CONCEPT
+------------------------------------
+class Methodload:
+    def display(self,a=None,b=None):#creating single method calling in different ways
+        print(a,b)
+
+obj=Methodload()
+obj.display()#without passing an argument also it will be executed // none none 
+obj.display(10)#10 none
+obj.display(10,20)#passing 
+
+OUTPUT
+-------------------------------------
+None None
+10 None
+10 20
