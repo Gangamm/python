@@ -1,0 +1,53 @@
+# python
+#hierarchical  level inheritance:
+
+class Parent:
+    def gdisplay(self):
+        print("parent class")
+class child1(Parent):
+    def  display(self):
+        print("child1")
+
+class Child2(Parent):
+    def show(self):
+        print("child2")
+
+obj=child1()#it can access properties of parent class and its properties  ,it can't inherit the child2 properties
+obj.display()
+obj.gdisplay()
+
+obj1=Child2()
+obj1.gdisplay()
+obj1.show()
+
+output
+---------------------------------------------------------------
+child1
+parent class
+parent class
+child2
+
+MULTIPLE INHERENACE
+------------------------------------------------------------------
+#Multiple   level inheritance:
+
+class Mother:
+    def gdisplay(self):
+        print("mother class")
+class Father:
+    def  display(self):
+        print("father class")
+
+class Child(Mother,Father):
+    def show(self):
+        print("child2")
+c=Child()
+c.display()
+c.gdisplay()
+c.show()
+
+OUTPUT
+--------------------------
+father class
+mother class
+child2
