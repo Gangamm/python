@@ -1,0 +1,30 @@
+# python
+#restricting the variables and method in a single entity
+#restricting(SCope)
+class Encap:#Encapsulation can be achieved by the scope 
+      a=10#this a public variable 
+      def display(self):#public function
+          print("welcome")
+E=Encap()
+print(E.a)
+E.display()
+
+OUTPUT
+------------------------------
+10
+welcome
+
+
+Private Encapsulation
+--------------------------
+lass Encap:#Encapsulation can be achieved by the scope 
+    __a=10;#this a private variable 
+    def __display(self):#private function
+          print("welcome")
+          print(self.__a)
+          
+          
+          OUTPUT
+          ----------------------
+          welcome
+          10
