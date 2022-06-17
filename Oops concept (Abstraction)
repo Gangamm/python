@@ -1,0 +1,21 @@
+# python
+#Abstract class->which have Abstract method
+#Abstract method->method having only declaration  but not the defination is called as abstract method
+#Concrete class->class without abstract method
+from abc import ABC,abstractmethod
+class AbstractDemo(ABC):
+    @abstractmethod#to make a abstract method
+    def display(self):#only declaration no defination
+        None
+    @abstractmethod
+    def show(self):
+        None
+class Demo(AbstractDemo):#inhireting the base class
+    def display(self):
+        print("Abstract Method")
+
+    def show(self):
+        print("Show Method")
+
+obj=Demo()
+obj.display()
