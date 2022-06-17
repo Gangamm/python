@@ -1,0 +1,43 @@
+# python
+#Inheritance :inhert from base class(parent class) to derived class(child class) is called as inheritance
+#in oder to access variable and method we need to create an object 
+#SINGLE INHERITANCE:derived class can inherit variables and method of base class
+---------------------------------------------------------------------------------------
+class Parent:
+    def  display(self):
+        print("parent")
+
+class Child(Parent):
+    def show(self):
+        print("child")
+obj=Child()#Creating a object of child we can access parent class properties
+obj.display()
+obj.show()
+
+OUTPUT
+------------------------------------------
+parent
+child
+
+MULTI LEVEL INHERITANCE
+-----------------------------------
+class Grand:
+    def gdisplay(self):
+        print("grand parent")
+class Parent(Grand):
+    def  display(self):
+        print("parent")
+
+class Child(Parent):
+    def show(self):
+        print("child")
+obj=Child()#Creating a object of child we can access parent class properties
+obj.display()
+obj.show()
+obj.gdisplay()
+
+OUTPUT
+-------------------------------------
+parent
+child
+grand parent
